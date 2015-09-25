@@ -2,9 +2,13 @@ body, html {
   font-family: 'Nunito', sans-serif;
   font-weight: normal;
   font-size: 16px;
-  background: #1abc9c;
   color: #fff;
   height: 100%;
+  background-color: #000;
+  	background: -webkit-linear-gradient(left, green , red); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, green, red); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right,green, red); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, green, red); /* Standard syntax (must be last) */
 }
 h1, h2, h3, h4, h5, h6 {
 	padding: 20px;
@@ -21,18 +25,20 @@ h1 {
 	/*margin-bottom: 65px;*/
 }
 h2 {
-	font-family: 'Muli', serif;
+	font-family: 'Nunito', serif;
 	font-weight: normal;
+	line-height: 1.5em;
 	color: #fff;
 }
 h3 {
-	font-family: 'Nunito', serif;
+	font-family: 'Arimo', serif;
 	font-weight: 400;
-	color: #fff;
+	color: #000;
+	text-shadow: 1px 1px #444;
 }
 
-h1 { font-size: 45px;}
-h2 { font-size: 36px;}
+h1 { font-size: 65px;}
+h2 { font-size: 50px;}
 h3 { font-size: 20px;}
 h4 { font-size: 18px;}
 h5 { font-size: 16px;}
@@ -362,5 +368,5 @@ margin-left: 50px;
 
 #jumbo-no-pad{
 	padding: 0px;
-}
 
+}

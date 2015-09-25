@@ -684,7 +684,7 @@
         if (typeof attr_data_date === "undefined") {
             // attr_data_date = $(this.element).attr('data-date');
             var currTime = new Date();
-            currTime.setMinutes(currTime.getMinutes() + 5);
+            currTime.setMinutes(currTime.getMinutes());
                 var timeUp = currTime;
                 var dd = timeUp.getDate();
                 var mm =timeUp.getMonth()+1; //January is 0!
@@ -848,7 +848,7 @@
             },
             Minutes: {
                 show: true,
-                text: "Minutes",
+                text: "Minute",
                 color: "#BFB"
             },
             Seconds: {
