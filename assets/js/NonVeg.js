@@ -42,7 +42,7 @@ $(document).ready(function(){
     );
 
   $('#myCarousel').carousel({
-    interval: 150000,
+    interval: 15000000,
     cycle: false,
     pause: false
   });
