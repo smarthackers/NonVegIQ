@@ -33,7 +33,6 @@ $(document).ready(function(){
     $("#jumbo-no-pad .item.done").remove();
     $("#out-of").html(questionsAttempted++ +"/"+totalNoOfQuestions);
   });
-
   $("#count-down").TimeCircles(
        {   
            circle_bg_color: "#8a7f71",
@@ -46,14 +45,11 @@ $(document).ready(function(){
             }
        }
     );
-
   $('#myCarousel').carousel({
     interval: 15000000,
     cycle: false,
     pause: false
   });
-
-
   jQuery(document).bind('keyup', function(e) {
 
     if(e.keyCode==39){
@@ -64,9 +60,7 @@ $(document).ready(function(){
     jQuery('a.carousel-control.left').trigger('click');
     }
   });
-
 particlesJS.load('particles-js', 'assets/js/particles.json', function() {
 });
-
 });
     
