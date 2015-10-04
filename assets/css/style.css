@@ -70,7 +70,8 @@ a:active {color: #416467;}
 ----------------------------------------*/
 
 .timing {
-	margin-top: 30px;
+	/*margin-top: 30px;*/
+	text-align: center;
 }
 .time_circles > div > h4 {
 	color: #fff;
@@ -146,5 +147,6 @@ canvas {
   position: absolute;
   top: 0px;
   left: 0px;
+  overflow: hidden;
 
 }

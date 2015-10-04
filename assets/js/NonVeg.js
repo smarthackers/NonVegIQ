@@ -1,5 +1,10 @@
 $(document).ready(function(){
   var responseArray = [];
+  //out-of questions block
+  var totalNoOfQuestions = $('.item').length;
+  var questionsAttempted=1;
+  $("#out-of").html(questionsAttempted++ +"/"+totalNoOfQuestions);
+  //end of out-of block
   $(".carousel-control").on("click", function(){
     var arr = [$('#jumbo-no-pad .item.active').attr('id') , $(this).hasClass('left')?0:1];
     responseArray.push(arr);
@@ -9,7 +14,7 @@ $(document).ready(function(){
         $("#myCarousel").remove();
         $(".carousel-control").remove();
         $("#result").html("Fetching your IQ...");
-        $.get( "fetchResults?response+="+responseArray+"time="+$("#count-down").TimeCircles().getTime(), function() {
+        $.get( "fetchResults?sid="+$( "div" ).data( "value" )+"response+="+responseArray+"time="+$("#count-down").TimeCircles().getTime(), function() {
           console.log("Response sent")
         })
         .done(function() {
@@ -26,6 +31,7 @@ $(document).ready(function(){
   });
   $('#myCarousel').on('slid.bs.carousel', function () {
     $("#jumbo-no-pad .item.done").remove();
+    $("#out-of").html(questionsAttempted++ +"/"+totalNoOfQuestions);
   });
 
   $("#count-down").TimeCircles(
