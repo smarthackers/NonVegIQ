@@ -14,8 +14,7 @@ $(document).ready(function(){
         $("#myCarousel").remove();
         $(".carousel-control").remove();
         $("#result").html("Fetching your IQ...");
-        $.get( "fetchResults?appSessionID="+$('body').data( "session" )+"&userID="+$( 'body' ).data( "user" )+"&testcode="+$( 'body' ).data( "test" )+"&response+="+responseArray+"&time="+$("#count-down").TimeCircles().getTime(), function(data) {
-          console.log("Response sent")
+        $.get( "fetchResults?appSessionID="+$('body').data( "session" )+"&userID="+$( 'body' ).data( "user" )+"&testcode="+$( 'body' ).data( "test" )+"&response="+JSON.stringify(responseArray)+"&time="+$("#count-down").TimeCircles().getTime(), function() {
         })
         .done(function(data) {
          $("#result").html("Your score is "+data);
