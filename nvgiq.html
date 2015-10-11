@@ -24,7 +24,7 @@
     <link rel="apple-touch-icon" sizes="72x72" href="/images/icons/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="/images/icons/apple-touch-icon-114x114.png">
   </head>
- <body>
+ <body data-session={{appSessionID}} data-user={{userID}} data-test={{testcode}} >
 <div id="particles-js">
 </div>
  <!-- Full Page Image Background Carousel Header -->
@@ -45,7 +45,7 @@
               </div>
               </div>
               <div id="result"></div>
-    <header id="myCarousel" data-session={{appSessionID}} data-user={{userID}} data-test={{testcode}} class="carousel slide container">
+    <header id="myCarousel" class="carousel slide container">
         <!-- Wrapper for Slides -->
         <div id="jumbo-no-pad" class="carousel-inner opaque-well">
 		{% for question in questionList %}
