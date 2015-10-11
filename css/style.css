@@ -1,0 +1,160 @@
+body, html {
+  font-family: 'Nunito', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: #fff;
+  height: 100%;
+  text-shadow: 10px 5px 20px #111;
+  text-align: center;
+  background-color: #BE3636;
+}
+h1, h2, h3, h4, h5, h6 {
+	padding: 20px;
+	font-weight: normal;
+	margin: 0 0 10px;
+}
+h1 {
+	font-family: 'Lobster', cursive;
+	text-transform: capitalize;
+	color: #fff;
+	border-bottom: 1px solid;
+	background: none;
+	/*margin-bottom: 65px;*/
+}
+h2 {
+	font-family: 'Nunito', serif;
+	font-weight: normal;
+	line-height: 1.5em;
+	color: #fff;
+	background: none;
+}
+h3 {
+	font-family: 'Arimo', serif;
+	font-weight: 400;
+	color: #fff;
+	text-shadow: 1px 1px #444;
+	background: none;
+}
+
+h1 { font-size: 3.5em;}
+h2 { font-size: 3.0em;}
+h3 { font-size: 2.5em;}
+h4 { font-size: 18px;}
+h5 { font-size: 16px;}
+h6 { font-size: 14px;}
+
+p {
+	
+	font-weight: normal;
+	font-family: 'Nunito', serif;
+	color: #fff;
+	font-size: 1.8em;
+	background: none;
+	text-align: left;
+
+}
+
+a {color: #1b727b}
+a:hover {color: #416467; text-decoration: none;}
+a:active {color: #416467;}
+
+.form-horizontal:after,
+.form-horizontal:before {
+	content: "";
+	display: table;
+}
+.form-horizontal:after,
+.form-horizontal:before
+ {
+	clear: both;
+}
+
+/*--------------------------------------
+# - 3.1 Countdown section style start here
+----------------------------------------*/
+
+.timing {
+	/*margin-top: 30px;*/
+	text-align: center;
+}
+.time_circles > div > h4 {
+	color: #fff;
+}
+.time_circles > div > span {
+	color: #fff;
+}
+.content .alert-success {
+
+	background-color: transparent;
+	color: #ffffff;
+	display: none;
+}
+.content .alert-warning {
+	background-color: transparent;
+	color: #ffffff;
+	display: none;
+} 
+ 
+.followus {
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+	color: #fff;
+	margin:0 0 45px;
+}
+
+/*---------------------------------------------------
+# - 3.3        social-icon style
+-----------------------------------------------------*/
+
+.social-icon {
+	list-style: none;
+	padding:0;
+}
+.social-icon li {
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 42px;
+}
+.social-icon li a{
+    color: #53544f;	
+}
+.social-icon li a:hover {
+	color: #2D2D2A;
+}
+
+.no-margin{
+margin:0;
+}
+
+.radio-margin{
+margin-left: 50px;
+}
+
+#jumbo-no-pad{
+	padding: 0px;
+
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+
+}
+
+
+.opaque-well{
+	background: rgba(0,0,0,0.3);
+}
