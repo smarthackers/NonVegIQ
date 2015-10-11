@@ -17,7 +17,7 @@ $(document).ready(function(){
         $.get( "fetchResults?appSessionID="+$('body').data( "session" )+"&userID="+$( 'body' ).data( "user" )+"&testcode="+$( 'body' ).data( "test" )+"&response+="+responseArray+"&time="+$("#count-down").TimeCircles().getTime(), function(data) {
           console.log("Response sent")
         })
-        .done(function() {
+        .done(function(data) {
          $("#result").html("Your score is "+data);
         })
         .fail(function() {
