@@ -14,11 +14,11 @@ $(document).ready(function(){
         $("#myCarousel").remove();
         $(".carousel-control").remove();
         $("#result").html("Fetching your IQ...");
-        $.get( "fetchResults?appSessionID="+$( "div" ).data( "session" )+"userID="+$( "div" ).data( "user" )+"testcode="+$( "div" ).data( "test" )+"response+="+responseArray+"time="+$("#count-down").TimeCircles().getTime(), function() {
+        $.get( "fetchResults?appSessionID="+$( "div" ).data( "session" )+"userID="+$( "div" ).data( "user" )+"testcode="+$( "div" ).data( "test" )+"response+="+responseArray+"time="+$("#count-down").TimeCircles().getTime(), function(data) {
           console.log("Response sent")
         })
         .done(function() {
-         $("#result").html("Your score is 162");
+         $("#result").html("Your score is "+data);
         })
         .fail(function() {
           alert( "INTERNET CONNECTIVITY ERROR" );
